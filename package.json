@@ -1,0 +1,29 @@
+{
+  "name": "noteapp",
+  "version": "1.0.0",
+  "description": "Note app week7",
+  "main": "assert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlecDWalker/Note_app.git"
+  },
+  "keywords": [
+    "Notes",
+    "Javascript"
+  ],
+  "author": "Alec Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlecDWalker/Note_app/issues"
+  },
+  "homepage": "https://github.com/AlecDWalker/Note_app#readme",
+  "devDependencies": {
+    "jasmine-node": "^3.0.0"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
