@@ -1,5 +1,8 @@
 'use strict';
 
+
+(function(exports) {
+
 function NoteList(){
   this.LIST = []
 }
@@ -9,6 +12,8 @@ NoteList.prototype.returnlist = function(){
 }
 
 NoteList.prototype.addnote = function(text){
-  note = new Note(text)
-  this.LIST.push(note)
+  this.LIST.push(new Note(text))
 }
+
+exports.NoteList = NoteList;
+})(this);
