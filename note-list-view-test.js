@@ -29,3 +29,15 @@ function handlesTwoNotes(){
 }
 
 handlesTwoNotes();
+
+function cutsAtTwentyCharacters(){
+  var note = new Note;
+  var noteList = new NoteList;
+  noteList.addnote('abcdefghijklmnopqrstuvwxyz')
+  var noteListView = new NoteListView(noteList);
+  var htmllist = noteListView.returnHTML()
+  console.log(htmllist)
+  assert.isTrue(htmllist === '<li><div>abcdefghijklmnopqrst</div></li>', 'only views the first 20 characters')
+}
+
+cutsAtTwentyCharacters();

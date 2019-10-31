@@ -22,7 +22,7 @@ function canUpdateInnerHTML(){
   var nc = new NoteController();
 
   nc.updateHTML(documentDouble)
-  assert.isTrue(elementDouble.innerHTML === '<li><div>Favourite drink: seltzer</div></li>', 'can update HTML')
+  assert.isTrue(elementDouble.innerHTML === '<li><div>Favourite drink: sel</div></li>', 'can update HTML')
 }
 
 canUpdateInnerHTML();
