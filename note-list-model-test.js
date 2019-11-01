@@ -11,6 +11,11 @@ function testAddNotes(){
   assert.isTrue(notelist.LIST.length === 1, 'can add notes to the list');
 }
 
+function testGivesNotesIdNumbers(){
+  var notelist = new NoteList();
+  notelist.addnote('Hello')
+  assert.isTrue(notelist.LIST[0].id === 0, 'gives notes an ID when created');
+}
 function testCanReturnList(){
   var notelist = new NoteList();
   var note = new Note();
@@ -21,3 +26,4 @@ function testCanReturnList(){
 testListStartsEmpty();
 testCanReturnList();
 testAddNotes();
+testGivesNotesIdNumbers();

@@ -12,7 +12,7 @@ NoteList.prototype.returnlist = function(){
 }
 
 NoteList.prototype.addnote = function(text){
-  this.LIST.push(new Note(text))
+  this.LIST.push(new Note(text, this.LIST.length))
 }
 
 exports.NoteList = NoteList;
